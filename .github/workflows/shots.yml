@@ -1,6 +1,9 @@
 name: Take screenshots
 
 on:
+ schedule:
+    # every day at 10:00 pm on the server
+    - cron:  '00 22 * * *'
   push:
   workflow_dispatch:
 
